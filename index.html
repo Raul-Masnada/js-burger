@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- link font google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Hamburgheria</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- intestazione pagina -->
+    <header class="center">
+      <h1 class="marginlf">
+        Create Your Burger
+      </h1>
+      <img src="img/burger-top.png" alt="">
+    </header>
+
+    <!-- corpo pagina -->
+    <main class="center">
+      <input id="burgername" class="marginlf" type="text" name="" value="" placeholder="Name Your Burger">
+      <div class="content-list marginlf">
+        <h3>
+          Ingredients
+        </h3>
+        <ul>
+          <li id="cheese">
+            <img src="img/cheese.svg" alt="immagine formaggio">
+            <span>
+              Cheese
+            </span>
+            <input class="ingredient"  type="checkbox" data-price="2">
+            <span class="bordeaux">
+              add
+            </span>
+          </li>
+          <li id="egg">
+            <img src="img/fried-egg.svg" alt="immagine uova">
+            <span>
+              Egg
+            </span>
+            <input class="ingredient" type="checkbox" data-price="2">
+            <span class="bordeaux">
+              add
+            </span>
+          </li>
+          <li id="mustard">
+            <img src="img/mustard.svg" alt="immagine mostarda">
+            <span>
+              Mustard
+            </span>
+            <input class="ingredient" type="checkbox" data-price="1">
+            <span class="bordeaux">
+              add
+            </span>
+          </li>
+          <li id="tomato">
+            <img src="img/tomato.svg" alt="immagine pomodoro">
+            <span>
+              Tomato
+            </span>
+            <input class="ingredient" type="checkbox" data-price="1">
+            <span class="bordeaux">
+              add
+            </span>
+          </li>
+          <li id="lettuce">
+            <img src="img/lettuce.svg" alt="immagine lattuga">
+            <span>
+              Lettuce
+            </span>
+            <input class="ingredient" type="checkbox" data-price="1">
+            <span class="bordeaux">
+              add
+            </span>
+          </li>
+          <li id="ketchup">
+            <img src="img/ketchup.svg" alt="immagine ketchup">
+            <span>
+              Ketchup
+            </span>
+            <input class="ingredient" type="checkbox" data-price="1">
+            <span class="bordeaux">
+              add
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-totalcal marginlf">
+        <label for="coupon">
+          Discount Coupon
+        </label>
+        <input id="coupon" type="text" name="" value="" placeholder="Insert your coupon">
+        <div>
+          <input id="calculate" type="button" name="" value="calculate">
+        </div>
+      </div>
+
+    </main>
+
+    <!-- piè pagina -->
+    <footer class="center">
+      <div class="content-price marginlf">
+        <span>
+          Your Price
+        </span>
+        <div>
+          <span>
+            €
+          </span>
+          <span id="price">
+            10
+          </span>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>
